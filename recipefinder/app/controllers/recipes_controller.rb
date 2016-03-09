@@ -1,8 +1,8 @@
 class RecipesController < ApplicationController
 
 	def index
-		p params["search"]
-		if !params["search"].empty?
+		#p params["search"]
+		if !params["search"].nil?
 			@search = params["search"] 	
 		else @search = 'chocolate'
   		end
